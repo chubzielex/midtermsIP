@@ -70,7 +70,19 @@ public class Draw extends JComponent{
 		}
 	}
 
+	public void checkCollision(){
+	 
+		for(int i=0; i < monsterlist.size(); i++){
+			if(player.isAttacking == true){
+				if(player.playerBounds().intersects(monsterlist.get(i).monsterBounds())){
+					monsterlist.get(i).life -= 10;
 
+				}
+						
+			}
+		}
+	}
+	
 	public void paintComponent(Graphics g){
 		super.paintComponent(g);
 		g.setColor(Color.YELLOW);

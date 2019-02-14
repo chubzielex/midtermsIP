@@ -115,8 +115,8 @@ public class Player{
 						e.printStackTrace();
 					}
 				}
-				// draw.checkCollision();
-				// isAttacking = false;
+				draw.checkCollision();
+				isAttacking = false;	
 			}
 		});
 		thread1.start();
@@ -130,28 +130,28 @@ public class Player{
 		y = y - 5;
 		reloadImage();
 		draw.repaint();
-		//draw.checkCollision();
+		draw.checkCollision();	
 	}
 
 	public void moveDown(){
 		y = y + 5;
 		reloadImage();
 		draw.repaint();
-		//draw.checkCollision();
+		draw.checkCollision();
 	}
 
 	public void moveLeft(){
 		x = x - 5;
 		reloadImage();
 		draw.repaint();
-		//draw.checkCollision();
+		draw.checkCollision();
 	}
 
 	public void moveRight(){
 		x = x + 5;
 		reloadImage();
 		draw.repaint();
-		//draw.checkCollision();
+		draw.checkCollision();
 	}
 
 
